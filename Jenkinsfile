@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/jenkins-ci-demo.git'
+                git 'https://github.com/DhruvSingla0008/jenkins-ci-demo.git'
             }
         }
 
@@ -16,7 +16,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'pytest || true'
+                bat 'pytest'
             }
         }
     }
